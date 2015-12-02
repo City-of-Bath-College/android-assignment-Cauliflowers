@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         questions.add(new QuestionObject("Are there 181 moons in our solar system?", true, R.drawable.moon1));
         questions.add(new QuestionObject("Are there 2000 comets in our solar system?", false, R.drawable.comet));
         questions.add(new QuestionObject("Are there 7 dwarf planets in our solar system?", false, R.drawable.dwarfplanet));
+        questions.add(new QuestionObject("Is the surface area of Pluto smaller than Russia?", true, R.drawable.pluto));
         Log.d("James_App", "Completed generateQuestions");
     }
     //Question Setup Function.

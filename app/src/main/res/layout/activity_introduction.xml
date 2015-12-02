@@ -58,25 +58,23 @@
         android:id="@+id/btnHighScore"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/btnPlay"
-        android:layout_centerHorizontal="true"
         android:text="High Scores"
         android:textSize="24sp"
-        android:layout_marginBottom="10dp"
         android:padding="10dp"
-        />
+        android:layout_below="@+id/btnPlay"
+        android:layout_alignLeft="@+id/btnClear"
+        android:layout_alignStart="@+id/btnClear" />
 
     <Button
         android:id="@+id/btnAbout"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/btnHighScore"
-        android:layout_centerHorizontal="true"
         android:text="About"
         android:textSize="24sp"
-        android:layout_marginBottom="10dp"
         android:padding="10dp"
-        />
+        android:layout_below="@+id/btnHighScore"
+        android:layout_alignLeft="@+id/btnHighScore"
+        android:layout_alignStart="@+id/btnHighScore" />
 
     <Button
         android:id="@+id/btnClear"
