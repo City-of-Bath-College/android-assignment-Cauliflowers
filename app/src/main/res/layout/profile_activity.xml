@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background5"
+    >
+
+    <!--Top Background-->
+    <ImageView
+        android:id="@+id/imgDesk"
+        android:src="@drawable/profilebackground"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        />
+
+    <!--Icon-->
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/mainicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="25dp"
+        />
+    <!--User Name-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="James Hurkett"
+        android:textSize="30sp"
+        android:layout_below="@id/imgDesk"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <!--User Location-->
+    <ImageView
+        android:id="@+id/location"
+        android:src="@drawable/location"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp"
+        />
+    <!--Location Description-->
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bath, UK"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/location"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@id/location"
+        android:layout_alignBottom="@id/location"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        />
+
+    <!--User Github-->
+    <ImageView
+        android:id="@+id/imggithubicon"
+        android:src="@drawable/browser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/location"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location" />
+    <!--Github Description-->
+    <TextView
+        android:id="@+id/githubIconText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cauliflowers"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/imggithubicon"
+        android:paddingLeft="20dp"
+        android:layout_alignTop="@id/imggithubicon"
+        android:layout_alignBottom="@id/imggithubicon"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        />
+
+    <!--User Birthday-->
+    <ImageView
+        android:id="@+id/cake"
+        android:src="@drawable/calendar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imggithubicon"
+        android:layout_marginLeft="10dp"
+        />
+    <!--Birthday Description-->
+    <TextView
+        android:id="@+id/cakeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10th November"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/cake"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@id/cake"
+        android:layout_alignBottom="@id/cake"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        />
+
+    <!--User Website-->
+    <ImageView
+        android:id="@+id/web"
+        android:src="@drawable/linkedin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cake"
+        android:layout_marginLeft="10dp"
+        />
+    <!--Website Description-->
+    <TextView
+        android:id="@+id/webText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://uk.linkedin.com/in/james-hurkett-095ab3a7"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/web"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@id/web"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
